@@ -1,3 +1,3 @@
 public interface Obstacles {
-    public void passingThrough(Participants participants);
+     void passingThrough(Participants participants);
 }
