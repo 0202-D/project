@@ -1,8 +1,8 @@
 public interface Participants {
 
-    public void run();
+     void run();
 
-    public void jump() ;
+     void jump() ;
 
 
 }
