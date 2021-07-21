@@ -21,7 +21,6 @@ public class PhoneBook {
         if (phonebook.containsKey(name)) {
             numbers = phonebook.get(name);
             numbers.add(phone_number);
-            phonebook.put(name,numbers);
         } else {
             numbers = new ArrayList<>();
             numbers.add(phone_number);
@@ -29,8 +28,9 @@ public class PhoneBook {
         }
 
         }
-    public void get(String name){
-        System.out.println(phonebook.get(name));
+    
+         public ArrayList get(String name){
+        return phonebook.getOrDefault(name,new ArrayList<>());
     }
         }
 
